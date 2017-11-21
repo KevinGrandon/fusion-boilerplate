@@ -7,7 +7,7 @@ import root from './root.js';
 
 export default () => {
   const app = new App(root);
-  app.plugin(Router);
   app.plugin(Styletron);
+  app.plugin(Router, {});
   return app;
 }
