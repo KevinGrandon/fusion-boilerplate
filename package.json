@@ -1,0 +1,22 @@
+{
+  "name": "fusion-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fusion-cli": "^0.1.10",
+    "fusion-core": "^0.2.3",
+    "fusion-plugin-react-router": "^0.2.2",
+    "fusion-plugin-styletron-react": "^0.2.0",
+    "fusion-react": "^0.1.9",
+    "fusion-react-async": "^0.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "styletron": "^3.0.0-rc.3"
+  },
+  "scripts": {
+    "dev": "fusion dev",
+    "test": "fusion test",
+    "build": "fusion build",
+    "start": "fusion start"
+  }
+}
