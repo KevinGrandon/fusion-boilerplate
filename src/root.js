@@ -1,14 +1,11 @@
 import React from 'react';
 
-import {styled} from 'fusion-plugin-styletron-react';
-import {Router, Route, Switch, NotFound} from 'fusion-plugin-react-router';
+import {Router, Route, Switch} from 'fusion-plugin-react-router';
 
 import Header from './components/header.js';
-
-const Home = () => <div>Hello</div>;
-const Panel = styled('div', {background: 'silver'});
-const Styles = () => <Panel>Styled component</Panel>;
-const PageNotFound = () => <NotFound><div>404</div></NotFound>;
+import Home from './pages/home.js';
+import PageNotFound from './pages/pageNotFound.js';
+import Styles from './pages/styles.js';
 
 const root = (
   <div>
