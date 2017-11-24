@@ -1,0 +1,31 @@
+{
+  "name": "fusion-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.1.1",
+    "apollo-client": "^2.0.3",
+    "apollo-link": "^1.0.3",
+    "apollo-link-http": "^1.2.0",
+    "fusion-cli": "^0.1.10",
+    "fusion-core": "^0.2.3",
+    "fusion-plugin-react-router": "^0.2.2",
+    "fusion-plugin-styletron-react": "^0.2.0",
+    "fusion-react": "^0.1.9",
+    "fusion-react-async": "^0.1.4",
+    "graphiql": "^0.11.10",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.1.1",
+    "react-apollo": "^2.0.1",
+    "react-dom": "^16.1.1",
+    "styletron": "^3.0.0-rc.3"
+  },
+  "scripts": {
+    "dev": "fusion dev",
+    "test": "fusion test",
+    "build": "fusion build",
+    "start": "fusion start"
+  }
+}
