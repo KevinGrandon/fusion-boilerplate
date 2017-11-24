@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'fusion-react';
+import App from 'fusion-apollo';
 import Router from 'fusion-plugin-react-router';
 import Styletron from 'fusion-plugin-styletron-react';
 
