@@ -6,21 +6,20 @@ import {Router, Route, Switch} from 'fusion-plugin-react-router';
 
 import client from './apollo';
 
-import Header from './components/header.js';
-import Home from './pages/home.js';
-import PageNotFound from './pages/pageNotFound.js';
-import Todos from './pages/todos.js';
+import App from './components/App'
+import CreatePost from './components/CreatePost'
+import CreateUser from './components/CreateUser'
+import LoginUser from './components/LoginUser'
+
 
 const root = (
   <ApolloProvider client={client}>
-    <div>
-    	<Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/todos" component={Todos} />
-        <Route component={PageNotFound} />
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path='/' component={App} />
+      <Route path='/create' component={CreatePost} />
+      <Route path='/login' component={LoginUser} />
+      <Route path='/signup' component={CreateUser} />
+    </Switch>
   </ApolloProvider>
 );
 export default root;

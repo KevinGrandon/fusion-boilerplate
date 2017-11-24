@@ -1,3 +1,4 @@
-export default const config = {
-  scapholdUrl: '...',
+const config = {
+  graphQLEndpoint: '...FILL ME IN...',
 };
+export default config;
