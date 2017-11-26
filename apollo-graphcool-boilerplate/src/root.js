@@ -10,7 +10,6 @@ import CreateUser from './components/CreateUser'
 import LoginUser from './components/LoginUser'
 
 const root = ({client} = {}) => {
-  console.log('Rendering root()!')
   return <ApolloProvider client={client}>
     <Switch>
       <Route exact path='/' component={App} />

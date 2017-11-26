@@ -97,5 +97,6 @@ const LOGGED_IN_USER_QUERY = gql`
 
 export default graphql(LOGGED_IN_USER_QUERY, {
   name: 'loggedInUserQuery',
-  options: {fetchPolicy: 'network-only'}
+  // Disabled for now as this breaks SSR state restoration.
+  // options: {fetchPolicy: 'network-only'}
 })(withRouter(App))

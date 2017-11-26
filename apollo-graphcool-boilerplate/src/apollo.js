@@ -12,12 +12,10 @@ import * as Cookies from 'js-cookie';
 import config from '../config/config';
 
 const getBrowserProps = () => {
-  console.log('browser token?', Cookies.get('token'));
   return Cookies.get('token');
 }
 
 const getServerProps = (ctx) => {
-  console.log('server cookies?', ctx && ctx.cookies.get('token'));
   return ctx && ctx.cookies.get('token');
 }
 
@@ -45,7 +43,6 @@ const getClient = (...args) => {
     initialState = JSON.parse(
       unescape(document.getElementById('__APOLLO_STATE__').textContent)
     );
-    console.log('initialState!', initialState)
   }
 
   const client = new ApolloClient({

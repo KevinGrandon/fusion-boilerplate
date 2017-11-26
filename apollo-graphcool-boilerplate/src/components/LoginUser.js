@@ -13,7 +13,6 @@ class CreateLogin extends React.Component {
   }
 
   render () {
-    console.log('this.props', this.props)
     if (this.props.loggedInUserQuery.loading) {
 
       return (
@@ -25,7 +24,6 @@ class CreateLogin extends React.Component {
 
     // redirect if user is logged in
     if (this.props.loggedInUserQuery.loggedInUser.id) {
-      console.warn('already logged in')
       this.props.history.replace('/')
     }
 
@@ -56,7 +54,6 @@ class CreateLogin extends React.Component {
 
   authenticateUser = async () => {
     const {email, password} = this.state
-console.log('doing auth', email, password);
     const response = await this.props.authenticateUserMutation({variables: {email, password}})
     Cookies.set('token', response.data.authenticateUser.token);
     this.props.history.replace('/')
