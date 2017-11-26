@@ -2423,6 +2423,10 @@ function-bind@^1.0.2, function-bind@^1.1.0, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
+fusion-apollo@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-0.0.2.tgz#df544342d43f6fd59d5cb5e7c684e5b1090cd9b7"
+
 fusion-cli@^0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/fusion-cli/-/fusion-cli-0.1.10.tgz#a34945ff93baa21049d89564bc1c7bd4c05308ee"
@@ -2520,10 +2524,6 @@ fusion-react-async@^0.1.4:
   resolved "https://registry.yarnpkg.com/fusion-react-async/-/fusion-react-async-0.1.4.tgz#f664a5bbe37aafd73e5b721586606940bda20398"
   dependencies:
     prop-types "^15.5.8"
-
-fusion-react@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-0.1.9.tgz#9313fc3fe221003c3c5b2592cb4512bfcc1e0095"
 
 gauge@~2.7.3:
   version "2.7.4"
