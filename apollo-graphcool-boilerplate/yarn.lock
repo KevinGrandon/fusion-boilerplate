@@ -3497,6 +3497,10 @@ jpeg-js@0.1.2, jpeg-js@^0.1.2:
   version "0.1.2"
   resolved "https://unpm.uberinternal.com/jpeg-js/-/jpeg-js-0.1.2.tgz#135b992c0575c985cfa0f494a3227ed238583ece"
 
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://unpm.uberinternal.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+
 js-library-detector@^4.0.0:
   version "4.3.1"
   resolved "https://unpm.uberinternal.com/js-library-detector/-/js-library-detector-4.3.1.tgz#6d34f55002813bc0a7543deef53faa4e2e79767b"

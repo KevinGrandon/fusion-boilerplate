@@ -5,12 +5,14 @@ import ListPage from './ListPage'
 import NewPostLink from './NewPostLink'
 import gql from 'graphql-tag'
 
+import * as Cookies from 'js-cookie';
+
 class App extends React.Component {
 
   _logout = () => {
     // remove token from local storage and reload page to reset apollo client
-    localStorage.removeItem('token')
-    window.location.reload()
+    Cookies.remove('token');
+    window.location.reload();
   }
 
   _showLogin = () => {

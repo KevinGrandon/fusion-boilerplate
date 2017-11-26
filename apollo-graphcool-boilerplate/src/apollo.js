@@ -5,30 +5,54 @@ import {HttpLink} from 'apollo-link-http';
 import {ApolloLink, concat} from 'apollo-link';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 
-import config from '../config/config';
-const httpLink = new HttpLink({
-  uri: config.graphQLEndpoint,
-  fetch: global.fetch || window.fetch,
-});
+import {unescape} from 'fusion-core';
 
-const authMiddleware = new ApolloLink((operation, forward) => {
-  const token =
-    (typeof localStorage !== 'undefined' && localStorage.getItem('token')) ||
-    null;
-  if (token) {
-    operation.setContext({
-      headers: {
-        authorization: `Bearer ${token}`,
-      },
-    });
+import * as Cookies from 'js-cookie';
+
+import config from '../config/config';
+
+const getBrowserProps = () => {
+  console.log('browser token?', Cookies.get('token'));
+  return Cookies.get('token');
+}
+
+const getServerProps = (ctx) => {
+  console.log('server cookies?', ctx && ctx.cookies.get('token'));
+  return ctx && ctx.cookies.get('token');
+}
+
+const getClient = (...args) => {
+  const httpLink = new HttpLink({
+    uri: config.graphQLEndpoint,
+    fetch: global.fetch || window.fetch,
+  });
+
+  const token = __BROWSER__ ? getBrowserProps() : getServerProps(...args);
+  const authMiddleware = new ApolloLink((operation, forward) => {
+    if (token) {
+      operation.setContext({
+        headers: {
+          authorization: `Bearer ${token}`,
+        },
+      });
+    }
+
+    return forward(operation);
+  });
+
+  let initialState = null;
+  if (__BROWSER__) {
+    initialState = JSON.parse(
+      unescape(document.getElementById('__APOLLO_STATE__').textContent)
+    );
+    console.log('initialState!', initialState)
   }
 
-  return forward(operation);
-});
+  const client = new ApolloClient({
+    link: concat(authMiddleware, httpLink),
+    cache: new InMemoryCache().restore(initialState),
+  });
+  return client;
+}
 
-const client = new ApolloClient({
-  link: concat(authMiddleware, httpLink),
-  cache: new InMemoryCache().restore(__BROWSER__ && window.__APOLLO_STATE__),
-});
-
-export default client;
+export default getClient;
