@@ -3,6 +3,8 @@ import { withRouter } from 'react-router-dom'
 import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 
+import * as Cookies from 'js-cookie';
+
 class CreateUser extends React.Component {
 
   constructor(props) {
@@ -63,7 +65,8 @@ class CreateUser extends React.Component {
 
     try {
       const user = await this.props.signupUserMutation({variables: {email, password, name}})
-      localStorage.setItem('token', user.data.signupUser.token)
+      Cookies.set('token', user.data.signupUser.token);
+
       this.props.history.replace('/')
     } catch (e) {
       console.error(`An error occured: `, e)
