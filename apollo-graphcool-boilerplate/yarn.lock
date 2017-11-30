@@ -2423,9 +2423,9 @@ function-bind@^1.0.2, function-bind@^1.1.0, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
-fusion-apollo@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-0.0.4.tgz#d7af21deb3e5a2e905a0d540d11e768713c3562e"
+fusion-apollo@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-0.0.5.tgz#e2e053e7ac0b816a57afaaa9c76f7ab35a8fb37c"
 
 fusion-cli@^0.1.10:
   version "0.1.10"

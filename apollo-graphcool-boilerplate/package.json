@@ -8,7 +8,7 @@
     "apollo-client": "^2.0.1",
     "apollo-link": "^1.0.0",
     "apollo-link-http": "^1.1.0",
-    "fusion-apollo": "0.0.4",
+    "fusion-apollo": "0.0.5",
     "fusion-cli": "^0.1.10",
     "fusion-core": "^0.2.3",
     "fusion-core-beta": "0.2.4-alpha2",

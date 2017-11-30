@@ -8,7 +8,6 @@ import root from './root.js';
 
 export default () => {
   const app = new App(root, getClient);
-  app.plugin(ApolloSSR);
   app.plugin(Styletron);
   app.plugin(Router, {});
   return app;
