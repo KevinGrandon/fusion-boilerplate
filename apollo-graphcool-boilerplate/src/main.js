@@ -1,13 +1,18 @@
+import 'isomorphic-fetch';
+
 import React from 'react';
-import App, {ApolloSSR} from 'fusion-apollo';
+import App from 'fusion-apollo';
 import Router from 'fusion-plugin-react-router';
 import Styletron from 'fusion-plugin-styletron-react';
+import apolloClientFactory from 'fusion-apollo-universal-client';
 
-import getClient from './apollo';
 import root from './root.js';
 
+import config from '../config/config';
+config.fetch = global.fetch || window.fetch;
+
 export default () => {
-  const app = new App(root, getClient);
+  const app = new App(root, apolloClientFactory(config));
   app.plugin(Styletron);
   app.plugin(Router, {});
   return app;
