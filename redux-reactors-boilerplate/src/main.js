@@ -33,8 +33,7 @@ export default () => {
 
   app.register(ReduxToken, Redux);
   app.register(EnhancerToken, ReduxActionEmitterEnhancer);
-  // TODO: Compose is not implemented yet
-  app.compose(EnhancerToken, reactorEnhancer);
+  app.enhance(EnhancerToken, () => reactorEnhancer);
 
   const reducer = state => state;
   app.register(ReducerToken, reducer);
