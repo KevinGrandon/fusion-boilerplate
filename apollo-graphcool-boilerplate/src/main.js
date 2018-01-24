@@ -13,7 +13,6 @@ config.fetch = global.fetch || window.fetch;
 
 export default () => {
   const app = new App(root, apolloClientFactory(config));
-  app.plugin(Styletron);
-  app.plugin(Router, {});
+  app.register(Router);
   return app;
-}
+};

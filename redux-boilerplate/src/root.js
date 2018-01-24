@@ -9,7 +9,7 @@ import Styles from './pages/styles.js';
 
 const root = (
   <div>
-  	<Header />
+    <Header />
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/styles" component={Styles} />
