@@ -31,7 +31,7 @@ export default () => {
   app.register(ReduxToken, Redux);
   app.register(EnhancerToken, ReduxActionEmitterEnhancer);
   __BROWSER__ && app.register(FetchToken, fetch);
-  app.register(InitialStateToken, getInitialState);
+  __NODE__ && app.register(InitialStateToken, getInitialState);
   app.register(PreloadedStateToken, {counter: 0});
 
   const reducer = combineReducers({

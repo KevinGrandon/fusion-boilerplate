@@ -37,7 +37,7 @@ export default () => {
 
   const reducer = state => state;
   app.register(ReducerToken, reducer);
-  app.register(InitialStateToken, getInitialState);
+  __NODE__ && app.register(InitialStateToken, getInitialState);
   app.register(PreloadedStateToken, {counter: 0});
 
   return app;
