@@ -7,7 +7,7 @@ import Redux, {
   ReduxToken,
   ReducerToken,
   EnhancerToken,
-  InitialStateToken,
+  GetInitialStateToken,
   PreloadedStateToken,
 } from 'fusion-plugin-react-redux';
 import ReduxActionEmitterEnhancer from 'fusion-plugin-redux-action-emitter-enhancer';
@@ -31,7 +31,7 @@ export default () => {
   app.register(ReduxToken, Redux);
   app.register(EnhancerToken, ReduxActionEmitterEnhancer);
   __BROWSER__ && app.register(FetchToken, fetch);
-  __NODE__ && app.register(InitialStateToken, getInitialState);
+  __NODE__ && app.register(GetInitialStateToken, getInitialState);
   app.register(PreloadedStateToken, {counter: 0});
 
   const reducer = combineReducers({

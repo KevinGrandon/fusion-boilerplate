@@ -12,6 +12,7 @@ import UniversalEvents, {
 import ApolloClientPlugin, {
   ApolloClientEndpointToken,
 } from 'fusion-apollo-universal-client';
+import unfetch from 'unfetch';
 
 import root from './root.js';
 
@@ -19,6 +20,8 @@ import config from '../config/config';
 
 export default () => {
   const app = new App(root);
+  __BROWSER__ && app.register(FetchToken, window.fetch);
+  __NODE__ && app.register(FetchToken, unfetch);
   app.register(Router);
   app.register(UniversalEventsToken, UniversalEvents);
   app.register(ApolloClientToken, ApolloClientPlugin);
