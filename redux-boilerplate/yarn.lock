@@ -3025,9 +3025,9 @@ fusion-cli@^1.1.0:
     winston "^2.4.0"
     yargs "^11.0.0"
 
-fusion-core@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.2.0.tgz#afb49e4ebc6f7842768ad7a38d0365dc9c1b074e"
+fusion-core@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.2.6.tgz#f9d0059db928d4ba73fe847f2d7d014f44a85dca"
   dependencies:
     koa "^2.4.1"
     koa-compose "^4.0.0"

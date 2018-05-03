@@ -11,7 +11,7 @@
     "fusion-apollo": "^1.0.1",
     "fusion-apollo-universal-client": "^1.0.1",
     "fusion-cli": "^1.1.0",
-    "fusion-core": "1.2.0",
+    "fusion-core": "1.2.6",
     "fusion-core-beta": "0.2.4-alpha2",
     "fusion-plugin-react-router": "^1.0.3",
     "fusion-plugin-styletron-react": "^2.0.1",
