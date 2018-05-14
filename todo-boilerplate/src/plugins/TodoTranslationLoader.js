@@ -36,7 +36,7 @@ const loader = __NODE__
           let expectedLocales;
 
           /**
-           * Use path or language header to determing initial locale
+           * Use path or language header to determine initial locale
            */
           if (localeFromPath.length > 0) {
             expectedLocales = new Locales(localeFromPath);
