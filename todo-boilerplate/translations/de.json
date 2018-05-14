@@ -1,0 +1,15 @@
+{
+  "app_title": "ToDo [DE]",
+  "input_placeholder": "Was getan werden muss?",
+  "clear_completed_button": "Löschen abgeschlossen",
+  "show_all_button": "Alle",
+  "show_active_button": "Aktiv",
+  "show_completed_button": "Abgeschlossen",
+  "items_left": "${num_items} artikel übrig",
+  "no_items_left": "Keine Artikel übrig",
+  "current_language": "Current Language",
+  "language_en": "English",
+  "language_fr": "Francais",
+  "language_de": "Deutsche",
+  "language_ja": "日本語"
+}
