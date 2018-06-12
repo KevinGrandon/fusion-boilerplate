@@ -13,6 +13,8 @@
     "fusion-cli": "^1.6.4",
     "fusion-core": "1.3.1",
     "fusion-core-beta": "0.2.4-alpha2",
+    "fusion-plugin-csrf-protection-react": "^1.0.3",
+    "fusion-plugin-jwt": "^1.0.5",
     "fusion-plugin-react-router": "^1.1.1",
     "fusion-plugin-styletron-react": "^2.4.1",
     "fusion-plugin-universal-events": "^1.0.5",
