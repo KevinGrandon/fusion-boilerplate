@@ -16,6 +16,6 @@
     "graphcool": "^0.11.0",
     "graphcool-lib": "^0.1.0",
     "graphql-request": "^1.4.0",
-    "validator": "^9.0.0"
+    "validator": "^10.0.0"
   }
 }
