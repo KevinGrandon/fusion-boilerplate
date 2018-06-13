@@ -1,0 +1,15 @@
+{
+  "app_title": "ToDo [ja]",
+  "input_placeholder": "何をする必要がありますか？",
+  "clear_completed_button": "クリア済み",
+  "show_all_button": "すべて",
+  "show_active_button": "アクティブ",
+  "show_completed_button": "完了しました",
+  "items_left": "残り${num_items}アイテム",
+  "no_items_left": "なし",
+  "current_language": "Current Language",
+  "language_en": "English",
+  "language_fr": "Francais",
+  "language_de": "Deutsche",
+  "language_ja": "日本語"
+}

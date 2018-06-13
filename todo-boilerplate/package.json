@@ -1,0 +1,35 @@
+{
+  "name": "fusion-todo-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "fusion-cli": "^1.1.0",
+    "fusion-core": "1.2.6",
+    "fusion-plugin-i18n-react": "^1.0.3",
+    "fusion-plugin-react-redux": "^1.0.2",
+    "fusion-plugin-react-router": "^1.0.3",
+    "fusion-plugin-redux-action-emitter-enhancer": "^1.0.2",
+    "fusion-plugin-styletron-react": "^2.0.1",
+    "fusion-plugin-universal-events-react": "^1.0.1",
+    "fusion-react": "^1.0.2",
+    "fusion-react-async": "^1.1.0",
+    "fusion-tokens": "^1.0.2",
+    "locale": "^0.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-scoped-reducer": "^0.0.4",
+    "reselect": "^3.0.1",
+    "styletron": "^3.0.4",
+    "todomvc-app-css": "^2.1.2",
+    "unfetch": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "fusion dev",
+    "test": "fusion test",
+    "build": "fusion build",
+    "start": "fusion start"
+  }
+}

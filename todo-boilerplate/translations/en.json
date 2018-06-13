@@ -1,0 +1,15 @@
+{
+  "app_title": "ToDo [en]",
+  "input_placeholder": "What needs to be done?",
+  "clear_completed_button": "Clear completed",
+  "show_all_button": "All",
+  "show_active_button": "Active",
+  "show_completed_button": "Completed",
+  "items_left": "${num_items} items left",
+  "no_items_left": "No items left",
+  "current_language": "Current Language",
+  "language_en": "English",
+  "language_fr": "Francais",
+  "language_de": "Deutsche",
+  "language_ja": "日本語"
+}
