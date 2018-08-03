@@ -11,7 +11,7 @@ Copy and rename config/config.js.tpl to config/config.js and include your graph.
 Deploy the database backend:
 
 ```
-cd backend && yarn && ./node_modules/.bin/graphcool deploy
+cd server && yarn && ./node_modules/.bin/graphcool deploy
 ```
 
 Run the app frontend:
