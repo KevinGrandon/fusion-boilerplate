@@ -25,6 +25,6 @@ export default () => {
   app.register(Router);
   app.register(UniversalEventsToken, UniversalEvents);
   app.register(ApolloClientToken, ApolloClientPlugin);
-  app.register(ApolloClientEndpointToken, config.endpoint);
+  app.register(ApolloClientEndpointToken, config.graphQLEndpoint);
   return app;
 };
