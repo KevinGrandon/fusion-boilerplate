@@ -911,7 +911,7 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-apollo-cache-inmemory@^1.2.5, apollo-cache-inmemory@^1.2.6:
+apollo-cache-inmemory@^1.2.5:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.2.6.tgz#85e2a52d63ea275117596c93a46a4e3b42b89b13"
   dependencies:
@@ -919,13 +919,27 @@ apollo-cache-inmemory@^1.2.5, apollo-cache-inmemory@^1.2.6:
     apollo-utilities "^1.0.17"
     graphql-anywhere "^4.1.15"
 
+apollo-cache-inmemory@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.2.7.tgz#80517c4b5e910022ab8d318f47d9364f99db8541"
+  dependencies:
+    apollo-cache "^1.1.14"
+    apollo-utilities "^1.0.18"
+    graphql-anywhere "^4.1.16"
+
 apollo-cache@^1.1.13:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.1.13.tgz#75c28091825992b2eec9fb63c9a367db3b4714a8"
   dependencies:
     apollo-utilities "^1.0.17"
 
-apollo-client@^2.3.5, apollo-client@^2.3.7:
+apollo-cache@^1.1.14:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.1.14.tgz#c7d54cdbc7f544161f78fa5e4bae56650e22f7ad"
+  dependencies:
+    apollo-utilities "^1.0.18"
+
+apollo-client@^2.3.5:
   version "2.3.7"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.3.7.tgz#891cd2392851f861a62fe334fa76fc629ed19fd3"
   dependencies:
@@ -934,6 +948,20 @@ apollo-client@^2.3.5, apollo-client@^2.3.7:
     apollo-link "^1.0.0"
     apollo-link-dedup "^1.0.0"
     apollo-utilities "^1.0.17"
+    symbol-observable "^1.0.2"
+    zen-observable "^0.8.0"
+  optionalDependencies:
+    "@types/async" "2.0.49"
+
+apollo-client@^2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.3.8.tgz#0384a7210eb601ab88b1c13750da076fc9255b95"
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "^1.1.14"
+    apollo-link "^1.0.0"
+    apollo-link-dedup "^1.0.0"
+    apollo-utilities "^1.0.18"
     symbol-observable "^1.0.2"
     zen-observable "^0.8.0"
   optionalDependencies:
@@ -987,6 +1015,12 @@ apollo-utilities@^1.0.0:
 apollo-utilities@^1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.17.tgz#04cd22db5c5dba8dbd349e28b0d9f9f525ab8e8a"
+  dependencies:
+    fast-json-stable-stringify "^2.0.0"
+
+apollo-utilities@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.18.tgz#e4ee91534283fde2b744a26caaea120fe6a94f67"
   dependencies:
     fast-json-stable-stringify "^2.0.0"
 
@@ -2997,11 +3031,11 @@ fusion-apollo-universal-client@^1.2.0:
     graphql "^0.13.2"
     js-cookie "^2.2.0"
 
-fusion-apollo@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-1.2.0.tgz#7cfcfe9aecb01b87435e53e806b2f97e9ca6ebc9"
+fusion-apollo@1.2.1-0:
+  version "1.2.1-0"
+  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-1.2.1-0.tgz#5ac82d2f09830475d229a758be54f41345b52795"
   dependencies:
-    fusion-react "^1.0.5"
+    fusion-react "^1.1.0"
 
 fusion-cli@^1.8.5:
   version "1.8.5"
@@ -3110,7 +3144,7 @@ fusion-plugin-universal-events@^1.0.5:
   dependencies:
     koa-bodyparser "4.2.0"
 
-fusion-react@^1.0.5:
+fusion-react@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fusion-react/-/fusion-react-1.1.0.tgz#05a52ca23ee85a0c812979b9dd897000ec3f3555"
   dependencies:
@@ -3258,6 +3292,12 @@ graphql-anywhere@^4.1.15:
   resolved "https://registry.yarnpkg.com/graphql-anywhere/-/graphql-anywhere-4.1.15.tgz#09ac33970e85930aa8682fc3276b76df2637e042"
   dependencies:
     apollo-utilities "^1.0.17"
+
+graphql-anywhere@^4.1.16:
+  version "4.1.16"
+  resolved "https://registry.yarnpkg.com/graphql-anywhere/-/graphql-anywhere-4.1.16.tgz#82bb59643e30183cfb7b485ed4262a7b39d8a6c1"
+  dependencies:
+    apollo-utilities "^1.0.18"
 
 graphql-tag@^2.9.2:
   version "2.9.2"
@@ -5802,9 +5842,9 @@ rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-apollo@^2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.1.9.tgz#1fd30ea2116375197bd53daa725e6fb8ab43ab80"
+react-apollo@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.1.11.tgz#ef4805f07af1d732ec94caebf7ba0728e2d162ca"
   dependencies:
     fbjs "^0.8.16"
     hoist-non-react-statics "^2.5.0"

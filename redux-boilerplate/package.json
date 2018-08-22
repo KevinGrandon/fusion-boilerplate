@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "fusion-cli": "^1.8.5",
     "fusion-core": "1.4.1",
     "fusion-plugin-react-redux": "^1.0.8",

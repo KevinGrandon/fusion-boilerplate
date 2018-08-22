@@ -2,6 +2,7 @@ import React from 'react';
 import {combineReducers, compose} from 'redux';
 
 import App from 'fusion-react';
+import {createPlugin} from 'fusion-core';
 import {FetchToken} from 'fusion-tokens';
 import Redux, {
   ReduxToken,
@@ -33,6 +34,21 @@ export default () => {
   __BROWSER__ && app.register(FetchToken, fetch);
   __NODE__ && app.register(GetInitialStateToken, getInitialState);
   app.register(PreloadedStateToken, {counter: 0});
+
+  app.register(
+    createPlugin({
+      middleware() {
+        return (ctx, next) => {
+          console.log('got middleware for path', ctx.path);
+          if (ctx.path === '/api/user/1') {
+            console.log('API SHOWING BEING HIT IN REQUEST');
+            ctx.body = {name: 'Bob'};
+          }
+          return next();
+        };
+      },
+    })
+  );
 
   const reducer = combineReducers({
     counter,
