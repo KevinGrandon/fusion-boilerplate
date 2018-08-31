@@ -1,0 +1,24 @@
+{
+  "name": "electron-boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal Electron application using Fusion.js",
+  "main": "main.js",
+  "scripts": {
+    "dev": "fusion dev",
+    "start": "fusion build --production && NODE_ENV=production electron ."
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "fusion-cli": "^1.9.0",
+    "fusion-core": "^1.5.0",
+    "fusion-plugin-react-router": "^1.2.0",
+    "fusion-react": "^1.2.1",
+    "fusion-tokens": "^1.0.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
