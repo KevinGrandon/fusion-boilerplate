@@ -11,7 +11,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
   // and load the index.html of the app.
-  // mainWindow.loadURL(`http://localhost:3000`);
+
   mainWindow.loadFile('index.html');
 
   // Open the DevTools.
@@ -47,13 +47,3 @@ app.on('activate', function() {
     createWindow();
   }
 });
-
-// Start Fusion.js server
-// const env =
-//   process.env.NODE_ENV === 'production' ? 'production' : 'development';
-// const entry = path.resolve(
-//   __dirname,
-//   `.fusion/dist/${env}/server/server-main.js`
-// );
-// const {start} = require(entry);
-// return start({__dirname, port: 3000});
