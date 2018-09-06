@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "fusion-cli": "^1.9.0",
-    "fusion-core": "1.5.1-1",
+    "fusion-core": "1.5.1",
     "fusion-plugin-react-router": "^1.2.0",
     "fusion-react": "^1.2.1",
     "fusion-tokens": "^1.0.4",
