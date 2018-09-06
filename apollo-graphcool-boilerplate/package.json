@@ -17,7 +17,7 @@
     "fusion-plugin-styletron-react": "^2.5.1",
     "fusion-plugin-universal-events": "^1.0.5",
     "fusion-tokens": "^1.0.4",
-    "graphql": "^0.13.2",
+    "graphql": "^14.0.0",
     "graphql-tag": "^2.9.2",
     "isomorphic-fetch": "^2.2.1",
     "js-cookie": "^2.2.0",
