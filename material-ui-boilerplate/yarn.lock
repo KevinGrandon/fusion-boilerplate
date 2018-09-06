@@ -627,13 +627,6 @@
     js-levenshtein "^1.1.3"
     semver "^5.3.0"
 
-"@babel/preset-flow@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/preset-flow/-/preset-flow-7.0.0.tgz#afd764835d9535ec63d8c7d4caf1c06457263da2"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-
 "@babel/preset-react@7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.0.0.tgz#e86b4b3d99433c7b3e9e91747e2653958bc6b3c0"
@@ -1241,17 +1234,6 @@ atob@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
 
-autoprefixer@^9.1.3:
-  version "9.1.3"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.1.3.tgz#bd5940ccb9d1bfa3508308659915f0a14394c8d5"
-  dependencies:
-    browserslist "^4.0.2"
-    caniuse-lite "^1.0.30000878"
-    normalize-range "^0.1.2"
-    num2fraction "^1.2.2"
-    postcss "^7.0.2"
-    postcss-value-parser "^3.2.3"
-
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -1597,14 +1579,6 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.0.2:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.1.0.tgz#81cbb8e52dfa09918f93c6e051d779cb7360785d"
-  dependencies:
-    caniuse-lite "^1.0.30000878"
-    electron-to-chromium "^1.3.61"
-    node-releases "^1.0.0-alpha.11"
-
 browserslist@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.1.1.tgz#328eb4ff1215b12df6589e9ab82f8adaa4fc8cd6"
@@ -1724,10 +1698,6 @@ camelcase@^1.0.2:
 camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
-
-caniuse-lite@^1.0.30000878:
-  version "1.0.30000878"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000878.tgz#c644c39588dd42d3498e952234c372e5a40a4123"
 
 caniuse-lite@^1.0.30000884:
   version "1.0.30000884"
@@ -2459,10 +2429,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.3.61:
-  version "1.3.61"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.61.tgz#a8ac295b28d0f03d85e37326fd16b6b6b17a1795"
-
 electron-to-chromium@^1.3.62:
   version "1.3.62"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.62.tgz#2e8e2dc070c800ec8ce23ff9dfcceb585d6f9ed8"
@@ -3073,15 +3039,15 @@ function.prototype.name@^1.1.0:
     function-bind "^1.1.1"
     is-callable "^1.1.3"
 
-fusion-cli@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/fusion-cli/-/fusion-cli-1.10.0.tgz#e363bba717eb322c4707025c15075aaa63c52347"
+fusion-cli@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/fusion-cli/-/fusion-cli-1.10.1.tgz#c2fec83b54dfa4beaf7b6dd7cf33d2296eeec661"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "7.0.0"
     "@babel/plugin-syntax-dynamic-import" "7.0.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
     "@babel/preset-env" "7.0.0"
-    "@babel/preset-flow" "7.0.0"
     "@babel/preset-react" "7.0.0"
     "@gfx/zopfli" "^1.0.8"
     babel-core "^7.0.0-bridge.0"
@@ -3128,9 +3094,9 @@ fusion-cli@^1.10.0:
     webpack-hot-middleware "^2.22.3"
     winston "^3.0.0"
 
-fusion-core@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.5.0.tgz#d35463836c56d899f9cc01fdfde6a27fbfab4551"
+fusion-core@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.5.1.tgz#e778491ae210a581858108491c426135478d14a1"
   dependencies:
     koa "^2.4.1"
     koa-compose "^4.0.0"
@@ -3139,13 +3105,11 @@ fusion-core@^1.5.0:
     ua-parser-js "^0.7.17"
     uuid "^3.2.1"
 
-fusion-plugin-material-ui@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/fusion-plugin-material-ui/-/fusion-plugin-material-ui-0.0.3.tgz#32ba287e482bc58c4d3c7075b29932413362519f"
+fusion-plugin-material-ui@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-material-ui/-/fusion-plugin-material-ui-0.1.1.tgz#1e9680a98909bb3013ecfa9d66cc33fee05d1440"
   dependencies:
     "@material-ui/core" "^1.5.1"
-    autoprefixer "^9.1.3"
-    postcss "^7.0.2"
     react-jss "^8.6.1"
 
 fusion-plugin-react-helmet-async@^1.0.0:
@@ -5265,10 +5229,6 @@ normalize-path@^2.0.1, normalize-path@^2.1.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
-normalize-range@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
-
 normalize-scroll-left@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.1.2.tgz#6b79691ba79eb5fb107fa5edfbdc06b55caee2aa"
@@ -5304,10 +5264,6 @@ nth-check@^1.0.1, nth-check@~1.0.1:
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.1.tgz#9929acdf628fc2c41098deab82ac580cf149aae4"
   dependencies:
     boolbase "~1.0.0"
-
-num2fraction@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
 
 number-is-nan@^1.0.0:
   version "1.0.1"
@@ -5679,18 +5635,6 @@ popper.js@^1.14.1:
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
-
-postcss-value-parser@^3.2.3:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
-
-postcss@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.2.tgz#7b5a109de356804e27f95a960bef0e4d5bc9bb18"
-  dependencies:
-    chalk "^2.4.1"
-    source-map "^0.6.1"
-    supports-color "^5.4.0"
 
 prebuild-install@^5.0.0:
   version "5.0.0"
