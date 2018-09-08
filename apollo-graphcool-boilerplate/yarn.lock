@@ -3111,9 +3111,9 @@ fusion-core-beta@0.2.4-alpha2:
     koa-compose "^4.0.0"
     node-mocks-http "^1.6.6"
 
-fusion-core@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.5.1.tgz#e778491ae210a581858108491c426135478d14a1"
+fusion-core@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.5.2.tgz#025c0be54993993ed256168fa670ccd5d75811e3"
   dependencies:
     koa "^2.4.1"
     koa-compose "^4.0.0"
