@@ -4,7 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "fusion-cli": "^1.9.0",
-    "fusion-core": "1.5.1",
+    "fusion-core": "1.5.2",
     "fusion-plugin-react-router": "^1.2.0",
     "fusion-plugin-styletron-react": "^2.5.2",
     "fusion-react": "^1.2.0",
