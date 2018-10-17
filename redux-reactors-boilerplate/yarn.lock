@@ -2388,6 +2388,10 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-plugin-jest@^21.18.0:
+  version "21.22.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.22.0.tgz#1b9e49b3e5ce9a3d0a51af4579991d517f33726e"
+
 eslint-scope@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-4.0.0.tgz#50bf3071e9338bcdc43331794a0cb533f0136172"
@@ -2940,9 +2944,11 @@ fusion-plugin-react-router@^1.1.3:
     prop-types "^15.6.1"
     react-router-dom "^4.2.2"
 
-fusion-plugin-redux-action-emitter-enhancer@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/fusion-plugin-redux-action-emitter-enhancer/-/fusion-plugin-redux-action-emitter-enhancer-1.0.4.tgz#5972435b3b5037f92473c55676445cf049d438d8"
+fusion-plugin-redux-action-emitter-enhancer@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/fusion-plugin-redux-action-emitter-enhancer/-/fusion-plugin-redux-action-emitter-enhancer-2.0.0.tgz#0ac105cf7757dc3daa4101455c3a03f9096d952e"
+  dependencies:
+    eslint-plugin-jest "^21.18.0"
 
 fusion-plugin-styletron-react@^2.5.1:
   version "2.5.1"
