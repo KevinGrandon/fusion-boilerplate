@@ -4,7 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "fusion-cli": "1.12.1",
-    "fusion-core": "1.7.0-2",
+    "fusion-core": "1.8.0",
     "fusion-plugin-react-helmet-async": "^1.0.0",
     "fusion-plugin-react-router": "^1.4.0",
     "fusion-plugin-styletron-react": "^2.5.2",
