@@ -3034,9 +3034,9 @@ fusion-cli@^1.9.0:
     webpack-sources "^1.1.0"
     winston "^3.0.0"
 
-fusion-core@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.8.0.tgz#286e8e2e2ebd253115cae97a70e5812e73f24901"
+fusion-core@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.9.0.tgz#a35436666c898de091aa259b295dc426df73e631"
   dependencies:
     koa "^2.5.3"
     koa-compose "^4.1.0"
