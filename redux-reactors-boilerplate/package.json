@@ -4,7 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "fusion-cli": "^1.8.5",
-    "fusion-core": "1.9.0",
+    "fusion-core": "1.10.0",
     "fusion-plugin-react-redux": "^1.0.8",
     "fusion-plugin-react-router": "^1.1.3",
     "fusion-plugin-redux-action-emitter-enhancer": "^2.0.0",

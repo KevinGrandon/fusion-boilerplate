@@ -2916,15 +2916,15 @@ fusion-cli@^1.9.0:
     webpack-sources "^1.1.0"
     winston "^3.0.0"
 
-fusion-core@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.9.0.tgz#a35436666c898de091aa259b295dc426df73e631"
+fusion-core@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.10.0.tgz#4c568671f622d47be0483c9a9d2ae5ed509ef570"
   dependencies:
-    koa "^2.5.3"
+    koa "^2.6.1"
     koa-compose "^4.1.0"
-    node-mocks-http "^1.7.2"
-    toposort "^2.0.1"
-    ua-parser-js "^0.7.18"
+    node-mocks-http "^1.7.3"
+    toposort "^2.0.2"
+    ua-parser-js "^0.7.19"
     uuid "^3.3.2"
 
 fusion-plugin-react-router@^1.2.0:
@@ -4335,9 +4335,9 @@ koa-static@^5.0.0:
     debug "^3.1.0"
     koa-send "^5.0.0"
 
-koa@^2.5.3:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/koa/-/koa-2.6.1.tgz#88cabb18cd297e0577a37e40f400c4b6f1699fef"
+koa@^2.6.1:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/koa/-/koa-2.6.2.tgz#57ba4d049b0a99cae0d594e6144e2931949a7ce1"
   dependencies:
     accepts "^1.3.5"
     cache-content-type "^1.0.0"
@@ -4849,7 +4849,7 @@ node-libs-browser@^2.0.0:
     util "^0.10.3"
     vm-browserify "0.0.4"
 
-node-mocks-http@^1.7.2:
+node-mocks-http@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.7.3.tgz#1c744189f012c1977f4d97443495931a7cd5b4d3"
   dependencies:
@@ -6586,7 +6586,7 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
 
-toposort@^2.0.1:
+toposort@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-2.0.2.tgz#ae21768175d1559d48bef35420b2f4962f09c330"
 
@@ -6649,6 +6649,10 @@ typedarray@^0.0.6:
 ua-parser-js@^0.7.18:
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
+
+ua-parser-js@^0.7.19:
+  version "0.7.19"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
 
 uglify-es@^3.3.4:
   version "3.3.9"
