@@ -2934,11 +2934,11 @@ fusion-cli@^1.8.5:
     webpack-sources "^1.1.0"
     winston "^3.0.0"
 
-fusion-core@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.10.0.tgz#4c568671f622d47be0483c9a9d2ae5ed509ef570"
+fusion-core@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/fusion-core/-/fusion-core-1.10.1.tgz#99a0f2a3dcb1554db87a2b102b7fc031a7b9960d"
   dependencies:
-    koa "^2.6.1"
+    koa "^2.6.2"
     koa-compose "^4.1.0"
     node-mocks-http "^1.7.3"
     toposort "^2.0.2"
@@ -4351,7 +4351,7 @@ koa@^2.4.1:
     type-is "^1.6.16"
     vary "^1.1.2"
 
-koa@^2.6.1:
+koa@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/koa/-/koa-2.6.2.tgz#57ba4d049b0a99cae0d594e6144e2931949a7ce1"
   dependencies:
