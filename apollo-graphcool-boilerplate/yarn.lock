@@ -3076,9 +3076,9 @@ fusion-apollo-universal-client@^2.0.0:
     graphql "git://github.com/graphql/graphql-js.git#npm"
     js-cookie "^2.2.0"
 
-fusion-apollo@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-1.5.1.tgz#9a445fd7f34ff05e2d4b7019d73c0ebbeba7d74c"
+fusion-apollo@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/fusion-apollo/-/fusion-apollo-1.5.2.tgz#248913ff6413ec8800f749eefa4e4096e58b9e33"
   dependencies:
     fusion-react "^1.3.4"
 
